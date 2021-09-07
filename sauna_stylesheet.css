@@ -1,3 +1,75 @@
-.title {
-    color:#87ceeb;
+@media (prefers-color-scheme){
+/*ALL_css code*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    font-weight: normal;
+    box-sizing: border-box;
+}
+/*body_cssのcode*/
+body {
+    color: var(--main-text);
+    /*background-color: var(--main-bg);
+    background-image: url(images/bg_header.svg),url(images/bg_footer.svg);
+    background-position: center top,center bottom;
+    background-repeat: repeat-x;
+    background-size: auto 100px;*/
+    font: 16px/1.7 "Lucida Grande","Hiragino Kaku Gothic ProN","ヒラギノ角ゴ ProN W3","游ゴシック","Yu Gothic",sans-serif;
+    /*padding: 0 5%;
+    transition: .5s;*/
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+/*ページ全体の配色調整*/
+:root {
+    --main-text: #333;
+    --main-bg: #fff;
+    --grey: #ccc;
+    --sub-grey: #eee;
+}
+/*hesder_cssのcode*/
+#header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+/*logo_cssのcode*/
+.logo {
+    margin-top: .5rem;
+    display: inline-block;
+}
+h1 {
+    color: #0bd;
+    text-decoration: none;
+}
+h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+/*flexnav_cssのcode*/
+.flexnav {
+    background: none;
+    position: static;
+    width: auto;
+    height: auto;
+    display: flex;
+    overflow-y: visible;
+}
+.flexnav {
+    left: 0;
+}
+nav {
+    order: 1;
+}
 }
