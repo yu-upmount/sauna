@@ -69,7 +69,85 @@ h1 {
 .flexnav {
     left: 0;
 }
+.flexnav ul {
+    display: flex;
+    flex-direction: row;
+}
+.flexnav ul {
+    width: max-content;
+    margin: 0 auto;
+}
+.flexnav li {
+    font-size: .875rem;
+}
+.flexnav li {
+    font-family: "LTG";
+    font-size: 1.25rem;
+    line-height: 1.4;
+    /*color: #fff;*/
+}
+.flexnav .menu-blog {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    margin: 1rem auto .5rem;
+}
+.flexnav .menu-blog {
+    fill: #999;
+    width: 1.5rem;
+    height: 1.5em;
+    position: relative;
+    top: 5px;
+}
+.ccurent-menu-item {
+    border-top: 5px solid #0bd;
+}
+.flexnav a {
+    padding: 0 1.25vw;
+}
+.flexnav a {
+    display: block;
+    /*color: #fff;*/
+}
+/*ul_cssのcode*/
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+
+}
+ul {
+    list-style: none;
+}
+/*nav_cssのcode*/
 nav {
     order: 1;
+}
+/*a_cssのcode*/
+a {
+    color: #0bd;
+    text-decoration: none;
+}
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+/*span_cssのcode*/
+.flexnav span {
+    font-size: 14px;
+}
+/*svg_cssのcode*/
+:not(svg) {
+    transform-origin: 0px 0px;
+}
+svg {
+    transform: translate(4px,5px);
 }
 }
