@@ -106,28 +106,7 @@ h1 {
     padding: 0 1.25vw;
 }
 .flexnav a {
-    display: block;
-    /*color: #fff;*/
-}
-/*ul_cssのcode*/
-ul {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
-
-}
-ul {
-    list-style: none;
-}
-/*nav_cssのcode*/
-nav {
-    order: 1;
-}
-/*a_cssのcode*/
+ *a_cssのcode*/
 a {
     color: #0bd;
     text-decoration: none;
