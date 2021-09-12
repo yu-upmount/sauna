@@ -1,4 +1,5 @@
-@media (prefers-color-scheme){
+@media (min-width: 900px){
+@media (prefers-color-scheme: light){
 /*ALL_css code*/
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
     margin: 0;
@@ -11,11 +12,18 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
     font-weight: normal;
     box-sizing: border-box;
 }
+/*ページ全体の配色調整*/
+:root {
+    --main-text: #333;
+    --main-bg: #fff;
+    --grey: #ccc;
+    --sub-grey: #eee;
+}
 /*body_cssのcode*/
 body {
     color: var(--main-text);
-    /*background-color: var(--main-bg);
-    background-image: url(images/bg_header.svg),url(images/bg_footer.svg);
+    background-color: var(--main-bg);
+    /*background-image: url(images/bg_header.svg),url(images/bg_footer.svg);
     background-position: center top,center bottom;
     background-repeat: repeat-x;
     background-size: auto 100px;*/
@@ -25,13 +33,6 @@ body {
 }
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     display: block;
-}
-/*ページ全体の配色調整*/
-:root {
-    --main-text: #333;
-    --main-bg: #fff;
-    --grey: #ccc;
-    --sub-grey: #eee;
 }
 /*hesder_cssのcode*/
 #header {
@@ -86,6 +87,20 @@ h1 {
     line-height: 1.4;
     /*color: #fff;*/
 }
+    /*menu-icon_cssのcode*/
+    .menu-icon {
+        fill: #999;
+        width: 1.5rem;
+        height: 1.5rem;
+        position: relative;
+        top: 5px;
+    }
+    .menu-icon {
+        display: block;
+        width: 2rem;
+        height: 2rem;
+        margin: 1rem auto .5rem;
+    }
     /*menu-blog_cssのcode*/
 .flexnav .menu-blog {
     display: block;
@@ -100,7 +115,7 @@ h1 {
     position: relative;
     top: 5px;
 }
-.ccurent-menu-item {
+.curent-menu-item {
     border-top: 5px solid #0bd;
 }
 .flexnav a {
@@ -148,7 +163,8 @@ a {
 :not(svg) {
     transform-origin: 0px 0px;
 }
-svg {
+/*svg {
     transform: translate(4px,5px);
+}*/
 }
 }
