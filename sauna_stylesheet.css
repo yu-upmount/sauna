@@ -63,6 +63,7 @@ h1 {
 .flexnav {
     background: #333;
     position: absolute;
+    top: 64px;
     left: 0;
     height: 0;
     width: 100vw;
@@ -80,9 +81,11 @@ h1 {
         overflow-y: visible;
     }
 }
-.flexnav ul {
-    display: flex;
-    flex-direction: row;
+@media (min-width: 900px){
+    .flexnav ul {
+        display: flex;
+        flex-direction: row;
+    }
 }
 .flexnav ul {
     width: max-content;
@@ -132,7 +135,9 @@ h1 {
 }
 .flexnav a {
     display: block;
-    color: var(--main-text);
+    /*color: var(--main-text);*/
+    /*今だけ*/
+    color: #0bd;
 }
 /*ul_cssのcode*/
 ul {
@@ -245,4 +250,8 @@ article .more-link svg {
     .menu-button {
         display: none;
     }
+}
+.flexnav.flexnav-open {
+    height: 480px;
+    top: 64px;
 }
