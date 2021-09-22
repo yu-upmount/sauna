@@ -92,33 +92,30 @@ h1 {
     margin: 0 auto;
 }
 .flexnav li {
-    font-size: .875rem;
-}
-.flexnav li {
     font-family: "LTG";
     font-size: 1.25rem;
     line-height: 1.4;
 }
+@media (min-width: 900px){
+    .flexnav li {
+        font-size: .875rem;
+    }
+}
 /*menu-icon_cssのcode*/
-.menu-icon {
+.flexnav .menu-icon {
     fill: #999;
     width: 1.5rem;
-    height: 1.5rem;
+    height: 1.5em;
     position: relative;
-    top: 5px;
+    top: 10px;
 }
-.menu-icon {
-    display: block;
-    width: 2rem;
-    height: 2rem;
-    margin: 1rem auto .5rem;
-}
-    /*menu-blog_cssのcode*/
-.flexnav .menu-blog {
-    display: block;
-    width: 2rem;
-    height: 2rem;
-    margin: 1rem auto .5rem;
+@media (min-width: 900px){
+    .flexnav .menu-icon {
+        display: block;
+        width: 2rem;
+        height: 2rem;
+        margin: 1rem auto .5rem;
+    }
 }
 .flexnav .menu-blog {
     fill: #999;
@@ -127,17 +124,22 @@ h1 {
     position: relative;
     top: 5px;
 }
-.curent-menu-item {
-    border-top: 5px solid #0bd;
-}
-.flexnav a {
-    padding: 0 1.25vw;
-}
 .flexnav a {
     display: block;
+    padding: .75rem;
     /*color: var(--main-text);*/
     /*今だけ*/
     color: #0bd;
+}
+@media (min-width: 900px){
+    .flexnav a {
+        padding: 0 1.25vw;
+    }
+}
+@media (min-width: 900px){
+    .flexnav .current-menu-item {
+        border-top: 5px solid #0bd;
+    }
 }
 /*ul_cssのcode*/
 ul {
@@ -163,9 +165,7 @@ a {
     text-decoration: none;
 }
 /*span_cssのcode*/
-.flexnav span {
-    font-size: 14px;
-}
+
 /*article h1,contents h1_cssのcode*/
 article h1, .contents h1 {
     font-weight: bold;
@@ -252,6 +252,47 @@ article .more-link svg {
     }
 }
 .flexnav.flexnav-open {
-    height: 480px;
+    height: 200px;
     top: 64px;
+}
+#menu-blog g {
+    transform: scale(0.375);
+}
+#menu-video g {
+    transform: scale(0.375);
+}
+#menu-shop g {
+    transform: scale(0.5);
+}
+#menu-book g {
+    transform: scale(0.5);
+}
+#menu-gallery g {
+    transform: scale(0.5);
+}
+#menu-coupon g {
+    transform: scale(0.375);
+}
+@media (min-width: 900px){
+    #menu-blog g {
+        transform: scale(0.49999);
+    }
+    #menu-video g {
+        transform: scale(0.49999);
+    }
+    #menu-shop g {
+        transform: scale(0.6668);
+    }
+    #menu-book g {
+        transform: scale(0.6668);
+    }
+    #menu-gallery g {
+        transform: scale(0.6668);
+    }
+    #menu-coupon g {
+        transform: scale(0.49999);
+    }
+    .flexnav .menu-icon {
+        top: 5px;
+    }
 }
