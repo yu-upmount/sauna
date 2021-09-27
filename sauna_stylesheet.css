@@ -29,7 +29,7 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 body {
     color: var(--main-text);
     background-color: var(--main-bg);
-    background-image: url(/Users/yutaka/Desktop/html_サウナ王への道/sauna.svg);
+    background-image: url(https://yu-upmount.github.io/sauna/sauna.svg);
     /*background-position: center top,center bottom;*/
     background-repeat: repeat-x;
     /*background-size: auto 100px;*/
