@@ -29,16 +29,19 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 body {
     color: var(--main-text);
     background-color: var(--main-bg);
-    /*background-image: url(images/bg_header.svg),url(images/bg_footer.svg);
-    background-position: center top,center bottom;
+    background-image: url(/Users/yutaka/Desktop/html_サウナ王への道/sauna.svg);
+    /*background-position: center top,center bottom;*/
     background-repeat: repeat-x;
-    background-size: auto 100px;*/
+    /*background-size: auto 100px;*/
     font: 16px/1.7 "Lucida Grande","Hiragino Kaku Gothic ProN","ヒラギノ角ゴ ProN W3","游ゴシック","Yu Gothic",sans-serif;
     padding: 0 10%;
     /*transition: .5s;*/
 }
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
     display: block;
+}
+#main span {
+    color: #D90404;
 }
 /*hesder_cssのcode*/
 #header {
@@ -127,9 +130,7 @@ h1 {
 .flexnav a {
     display: block;
     padding: .75rem;
-    /*color: var(--main-text);*/
-    /*今だけ*/
-    color: #0bd;
+    color: var(--main-bg);
 }
 @media (min-width: 900px){
     .flexnav a {
@@ -138,7 +139,7 @@ h1 {
 }
 @media (min-width: 900px){
     .flexnav .current-menu-item {
-        border-top: 5px solid #0bd;
+        border-top: 5px solid #F27127;
     }
 }
 /*ul_cssのcode*/
@@ -161,7 +162,7 @@ article a.article-title {
     color: var(--main-text);
 }
 a {
-    color: #0bd;
+    color: #F27127;
     text-decoration: none;
 }
 /*span_cssのcode*/
@@ -216,7 +217,7 @@ article .more-link {
     margin-top: 15px;
 }
 article .more-link svg {
-    fill: #0bd;
+    fill: #F27127;
 }
 #icon-call {
     fill: var(--grey);
@@ -234,7 +235,7 @@ article .more-link svg {
     top: 1rem;
     width: 100px;
     height: 36px;
-    color: var(--main-text);
+    color: var(--main-bg);
     cursor: pointer;
     padding: 5px 0 0 15px;
     font-family: "LTG";
@@ -245,6 +246,9 @@ article .more-link svg {
     top: 4px;
     left: -7px;
     margin-right: -7px;
+}
+#btn-menu {
+    fill: var(--main-bg);
 }
 @media (min-width: 900px){
     .menu-button {
